@@ -1,0 +1,233 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS161 U?
+U 1 1 5FB7FDA9
+P 3350 3850
+F 0 "U?" H 3350 4831 50  0001 C CNN
+F 1 "74LS161" H 3429 3559 50  0000 C CNN
+F 2 "" H 3350 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 3350 3850 50  0001 C CNN
+	1    3350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS242 U?
+U 1 1 5FB8512C
+P 6000 3650
+F 0 "U?" H 6000 4431 50  0001 C CNN
+F 1 "74LS242" H 6000 3553 50  0000 C CNN
+F 2 "" H 6000 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS242" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3350 3850 3350
+Wire Wire Line
+	3850 3450 5500 3450
+Wire Wire Line
+	5500 3550 3850 3550
+Wire Wire Line
+	3850 3650 5500 3650
+Wire Wire Line
+	5050 3850 5400 3850
+Wire Wire Line
+	5500 3950 5400 3950
+Wire Wire Line
+	5400 3950 5400 3850
+Connection ~ 5400 3850
+Wire Wire Line
+	5400 3850 5500 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5FB89805
+P 5050 3850
+F 0 "#PWR?" H 5050 3600 50  0001 C CNN
+F 1 "GND" H 5055 3677 50  0000 C CNN
+F 2 "" H 5050 3850 50  0001 C CNN
+F 3 "" H 5050 3850 50  0001 C CNN
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB89F94
+P 3350 2800
+F 0 "#PWR?" H 3350 2650 50  0001 C CNN
+F 1 "+3.3V" H 3365 2973 50  0000 C CNN
+F 2 "" H 3350 2800 50  0001 C CNN
+F 3 "" H 3350 2800 50  0001 C CNN
+	1    3350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB8A58A
+P 6000 2800
+F 0 "#PWR?" H 6000 2650 50  0001 C CNN
+F 1 "+3.3V" H 6015 2973 50  0000 C CNN
+F 2 "" H 6000 2800 50  0001 C CNN
+F 3 "" H 6000 2800 50  0001 C CNN
+	1    6000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2800 6000 3050
+Wire Wire Line
+	3350 2800 3350 3050
+Wire Wire Line
+	2850 4350 2450 4350
+Text Label 2450 4350 0    50   ~ 0
+not_reset
+Entry Wire Line
+	6750 3650 6850 3750
+Entry Wire Line
+	6750 3550 6850 3650
+Entry Wire Line
+	6750 3450 6850 3550
+Entry Wire Line
+	6750 3350 6850 3450
+Wire Wire Line
+	6750 3650 6500 3650
+Wire Wire Line
+	6500 3550 6750 3550
+Wire Wire Line
+	6750 3450 6500 3450
+Wire Wire Line
+	6500 3350 6750 3350
+Text Label 6550 3350 0    50   ~ 0
+pc0
+Text Label 6550 3450 0    50   ~ 0
+pc1
+Text Label 6550 3550 0    50   ~ 0
+pc2
+Text Label 6550 3650 0    50   ~ 0
+pc3
+$Comp
+L power:GND #PWR?
+U 1 1 5FB945BA
+P 6000 4350
+F 0 "#PWR?" H 6000 4100 50  0001 C CNN
+F 1 "GND" H 6005 4177 50  0000 C CNN
+F 2 "" H 6000 4350 50  0001 C CNN
+F 3 "" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4250 6000 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5FB94EF3
+P 3350 4800
+F 0 "#PWR?" H 3350 4550 50  0001 C CNN
+F 1 "GND" H 3355 4627 50  0000 C CNN
+F 2 "" H 3350 4800 50  0001 C CNN
+F 3 "" H 3350 4800 50  0001 C CNN
+	1    3350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4800 3350 4650
+Wire Wire Line
+	2850 4150 2450 4150
+Text Label 2450 4150 0    50   ~ 0
+CLK
+Wire Wire Line
+	2850 4050 2650 4050
+Wire Wire Line
+	2650 4050 2650 3950
+Wire Wire Line
+	2850 3950 2650 3950
+Connection ~ 2650 3950
+Wire Wire Line
+	2650 3950 2450 3950
+$Comp
+L newlib:X U?
+U 1 1 5FB9B88F
+P 3750 3850
+F 0 "U?" V 3750 3850 50  0001 C CNN
+F 1 "X" H 3750 3850 50  0001 C CNN
+F 2 "" H 3750 3850 50  0001 C CNN
+F 3 "" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L newlib:X U?
+U 1 1 5FB9D1B9
+P 2950 3350
+F 0 "U?" V 2950 3350 50  0001 C CNN
+F 1 "X" H 2950 3350 50  0001 C CNN
+F 2 "" H 2950 3350 50  0001 C CNN
+F 3 "" H 2950 3350 50  0001 C CNN
+	1    2950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L newlib:X U?
+U 1 1 5FB9D437
+P 2950 3450
+F 0 "U?" V 2950 3450 50  0001 C CNN
+F 1 "X" H 2950 3450 50  0001 C CNN
+F 2 "" H 2950 3450 50  0001 C CNN
+F 3 "" H 2950 3450 50  0001 C CNN
+	1    2950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L newlib:X U?
+U 1 1 5FB9D82F
+P 2950 3550
+F 0 "U?" V 2950 3550 50  0001 C CNN
+F 1 "X" H 2950 3550 50  0001 C CNN
+F 2 "" H 2950 3550 50  0001 C CNN
+F 3 "" H 2950 3550 50  0001 C CNN
+	1    2950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L newlib:X U?
+U 1 1 5FB9D953
+P 2950 3650
+F 0 "U?" V 2950 3650 50  0001 C CNN
+F 1 "X" H 2950 3650 50  0001 C CNN
+F 2 "" H 2950 3650 50  0001 C CNN
+F 3 "" H 2950 3650 50  0001 C CNN
+	1    2950 3650
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	6850 2250 6850 3850
+$Comp
+L newlib:X U?
+U 1 1 5FB9ED6C
+P 2950 3850
+F 0 "U?" V 2950 3850 50  0001 C CNN
+F 1 "X" H 2950 3850 50  0001 C CNN
+F 2 "" H 2950 3850 50  0001 C CNN
+F 3 "" H 2950 3850 50  0001 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+Text Label 2450 3950 0    50   ~ 0
+CE
+Text Label 6850 2950 1    50   ~ 0
+BUS
+Text Notes 5350 3850 2    50   ~ 0
+A->B
+$EndSCHEMATC
