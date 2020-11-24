@@ -881,41 +881,39 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 7350 8500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6850 8300 5400 8300
+	6850 8300 6450 8300
 Wire Wire Line
 	5400 8300 5400 7850
 Wire Wire Line
-	6850 8400 5450 8400
+	6850 8400 6350 8400
 Wire Wire Line
 	5450 8400 5450 7750
 Wire Wire Line
 	5450 7750 5400 7750
 Wire Wire Line
-	6850 8500 5500 8500
+	6850 8500 6250 8500
 Wire Wire Line
 	5500 8500 5500 7650
 Wire Wire Line
 	5500 7650 5400 7650
 Wire Wire Line
-	6850 8600 5550 8600
+	6850 8600 6150 8600
 Wire Wire Line
 	5550 8600 5550 7550
 Wire Wire Line
 	5550 7550 5400 7550
 Wire Wire Line
-	6850 8700 5600 8700
+	6850 8700 6050 8700
 Wire Wire Line
 	5600 7450 5400 7450
 Wire Wire Line
 	5600 8700 5600 7450
 Wire Wire Line
-	6850 8800 5650 8800
+	6850 8800 5950 8800
 Wire Wire Line
 	5650 8800 5650 7350
 Wire Wire Line
 	5650 7350 5400 7350
-Wire Wire Line
-	6850 8900 5700 8900
 Wire Wire Line
 	5700 8900 5700 7250
 Wire Wire Line
@@ -985,7 +983,63 @@ Wire Wire Line
 	7400 2700 7400 2800
 Wire Wire Line
 	7400 2800 7700 2800
+Connection ~ 7400 2700
+Wire Wire Line
+	5750 9000 5750 9700
+Connection ~ 5750 9000
+Wire Wire Line
+	5850 8900 5850 9700
+Wire Wire Line
+	5700 8900 5850 8900
+Connection ~ 5850 8900
+Wire Wire Line
+	5850 8900 6850 8900
+Wire Wire Line
+	5950 8800 5950 9700
+Connection ~ 5950 8800
+Wire Wire Line
+	5950 8800 5650 8800
+Wire Wire Line
+	6050 8700 6050 9700
+Connection ~ 6050 8700
+Wire Wire Line
+	6050 8700 5600 8700
+Wire Wire Line
+	6150 8600 6150 9700
+Connection ~ 6150 8600
+Wire Wire Line
+	6150 8600 5550 8600
+Wire Wire Line
+	6250 8500 6250 9700
+Connection ~ 6250 8500
+Wire Wire Line
+	6250 8500 5500 8500
+Wire Wire Line
+	6350 8400 6350 9700
+Connection ~ 6350 8400
+Wire Wire Line
+	6350 8400 5450 8400
+Wire Wire Line
+	6450 8300 6450 9700
 Wire Bus Line
 	5300 1500 5300 10550
-Connection ~ 7400 2700
+Connection ~ 6450 8300
+Wire Wire Line
+	6450 8300 5400 8300
+Text Label 5750 9700 1    50   ~ 0
+o0
+Text Label 5850 9700 1    50   ~ 0
+o1
+Text Label 5950 9700 1    50   ~ 0
+o2
+Text Label 6050 9700 1    50   ~ 0
+o3
+Text Label 6150 9700 1    50   ~ 0
+o4
+Text Label 6250 9700 1    50   ~ 0
+o5
+Text Label 6350 9700 1    50   ~ 0
+o6
+Text Label 6450 9700 1    50   ~ 0
+o7
 $EndSCHEMATC
